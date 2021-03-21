@@ -1,5 +1,5 @@
 # Not-Defteri
-# Xamarin.Forms
-# Mobil Programlama
-# Bilgisayar Programcılığı
-# Uludağ Üniversite
+## Xamarin.Forms
+### Mobil Programlama
+#### Bilgisayar Programcılığı
+##### Uludağ Üniversite
