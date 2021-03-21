@@ -30,6 +30,7 @@ namespace Not_Defteri
             {
                 conn.CreateTable<Content>();
                 var contents = conn.Table<Content>().ToList();
+                contentListiew.ItemsSource = contents;
             }
         }
         private void ClickMe_Clicked(object sender, EventArgs e)

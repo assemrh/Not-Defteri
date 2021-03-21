@@ -9,7 +9,12 @@
             />
     </ContentPage.ToolbarItems>
     <ContentPage.Content>
-        <StackLayout>
-        </StackLayout>
+        <ListView x:Name="contentListiew">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <TextCell Text="{Binding Baslik}" Detail="{Binding EklemeTarihi}"/>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>    
     </ContentPage.Content>
 </ContentPage>

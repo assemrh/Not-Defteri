@@ -23,7 +23,7 @@ namespace Not_Defteri
             {
                 Baslik = baslikEntry.Text,
                 Icerik = icerikEditor.Text,
-                Kategori = 
+                Kategori = kategoriEntry.Text,
                 EklemeTarihi = DateTime.Now.ToString()
             };
             using (SQLiteConnection conn = new SQLiteConnection(App.FilePath))
