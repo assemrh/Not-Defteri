@@ -31,7 +31,7 @@ namespace Not_Defteri
                 conn.CreateTable<Content>();
                 conn.Insert(content);
             }
-            App.Current.MainPage = new ContentsPage();
+            App.Current.MainPage = new NavigationPage(new ContentsPage());
             //MainPage = 
 
 

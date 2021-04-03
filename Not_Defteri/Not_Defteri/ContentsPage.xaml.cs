@@ -30,7 +30,7 @@ namespace Not_Defteri
             using (SQLiteConnection conn = new SQLiteConnection(App.FilePath))
             {
                 conn.CreateTable<Content>();
-                var contents = conn.Table<Content>().ToList();
+                var contents = conn.Table<Content>().OrderByDescending(x => x.Id).ToList();
                 contentListiew.ItemsSource = contents;
             }
         }

@@ -12,6 +12,24 @@
         <StackLayout Orientation="Vertical"
              VerticalOptions="Fill"
              HorizontalOptions="StartAndExpand">
+            <!--<AbsoluteLayout 
+                
+                
+                >
+                <Frame BorderColor="Aqua" CornerRadius="100"
+                       BackgroundColor="Red"
+                       HorizontalOptions="End"
+                       VerticalOptions="End"
+                       AbsoluteLayout.LayoutFlags="YProportional,XProportional"   
+                       AbsoluteLayout.LayoutBounds="10,1">
+                    <Label
+                    Text="+"
+                    Margin="2"
+                    
+                   /> 
+                </Frame>
+
+            </AbsoluteLayout>-->
             <ListView 
                 x:Name="contentListiew" 
                 VerticalOptions="FillAndExpand"
@@ -43,6 +61,7 @@
                 </ListView.ItemTemplate>
                 
             </ListView>
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
