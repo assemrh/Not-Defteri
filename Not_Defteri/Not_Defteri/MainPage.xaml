@@ -44,7 +44,8 @@
                     TextColor="Black"
                     BackgroundColor="Silver"
                     x:Name="Canclebtn"
-                    Clicked="Canclebtn_Clicked"/>
+                    Clicked="Canclebtn_Clicked"
+                    />
             </Grid>
 
         </StackLayout>

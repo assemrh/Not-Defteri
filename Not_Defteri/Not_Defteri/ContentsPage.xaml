@@ -4,12 +4,12 @@
              x:Class="Not_Defteri.ContentsPage">
     <ContentPage.ToolbarItems>
         <ToolbarItem 
-            Text="New"
+            Text="Yeni"
             Clicked="ToolbarItem_Clicked"
             />
     </ContentPage.ToolbarItems>
     <ContentPage.Content>
-        <StackLayout Orientation="Vertical"
+            <StackLayout Orientation="Vertical"
              VerticalOptions="Fill"
              HorizontalOptions="StartAndExpand">
             <!--<AbsoluteLayout 
@@ -30,31 +30,32 @@
                 </Frame>
 
             </AbsoluteLayout>-->
-            <ListView 
+                <ListView 
+                
                 x:Name="contentListiew" 
                 VerticalOptions="FillAndExpand"
                 BackgroundColor="Transparent"
-                HasUnevenRows="True"
+                HasUnevenRows="True" SeparatorColor="#FF0000" SelectionMode="None" SeparatorVisibility="None"
                >
                 
                 <ListView.ItemTemplate >
-                    <DataTemplate>
-                        <ViewCell>
-                            <Grid Margin="13, 0" Padding="10" >
-                                <Frame BorderColor="DarkGray" CornerRadius="10">
-                                    <StackLayout>
-                                        <Label Text="{Binding Baslik}" 
-                                               Margin="0,3" 
-                                               FontSize="24"/>
+                    <DataTemplate >
+                        <ViewCell >
+                                <Grid Margin="0, 0" Padding="15,8" >
+                                            <Frame  BorderColor="#99FCE7" CornerRadius="10">
                                         <StackLayout>
-  
-                                            <Label Text="{Binding Icerik}" Margin="0" />
-                                            <Label Text="{Binding EklemeTarihi}" Margin="3" HorizontalOptions="Center" />
-                                        </StackLayout>
-                                    </StackLayout>
+                                            <Label Text="{Binding Baslik}" 
+                                               Margin="0,3" 
+                                               FontSize="24" />
+                                            <StackLayout>
 
-                                </Frame>
-                            </Grid>
+                                                <Label Text="{Binding Icerik}" Margin="0" />
+                                                <Label Text="{Binding EklemeTarihi}" Margin="3" HorizontalOptions="Center" />
+                                            </StackLayout>
+                                        </StackLayout>
+
+                                    </Frame>
+                                </Grid>
                         </ViewCell>
                         
                     </DataTemplate>
@@ -63,5 +64,6 @@
             </ListView>
 
         </StackLayout>
+
     </ContentPage.Content>
 </ContentPage>

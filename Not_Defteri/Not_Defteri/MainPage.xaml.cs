@@ -39,6 +39,7 @@ namespace Not_Defteri
 
         private void Canclebtn_Clicked(object sender, EventArgs e)
         {
+            App.Current.MainPage = new NavigationPage(new ContentsPage());
 
         }
     }
