@@ -31,9 +31,13 @@ namespace Not_Defteri
                 conn.CreateTable<Content>();
                 conn.Insert(content);
             }
-    }
+            App.Current.MainPage = new ContentsPage();
+            //MainPage = 
 
-    private void Canclebtn_Clicked(object sender, EventArgs e)
+
+        }
+
+        private void Canclebtn_Clicked(object sender, EventArgs e)
         {
 
         }

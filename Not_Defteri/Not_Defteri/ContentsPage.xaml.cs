@@ -11,9 +11,10 @@ using Xamarin.Forms.Xaml;
 namespace Not_Defteri
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class ContactsPage : ContentPage
+    public partial class ContentsPage : ContentPage
     {
-        public ContactsPage()
+
+        public ContentsPage()
         {
             InitializeComponent();
         }

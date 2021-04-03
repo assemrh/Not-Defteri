@@ -15,3 +15,59 @@
             </Label.FormattedText>
         </Label>
     </StackLayout>
+
+    <StackLayout Padding="20,0,0,0"  HorizontalOptions="CenterAndExpand" >
+        <Label x:Name="FirstName">
+            <Label.Text>
+                <MultiBinding StringFormat="{}{0} {1}">
+                    <Binding Path="FirstName" />
+                    <Binding Path="LastName" />
+                </MultiBinding>
+            </Label.Text>
+        </Label>
+    </StackLayout>
+
+    <ViewCell >
+    <Grid>
+        <StackLayout Margin="5,20">
+            <Label
+                Text="{Binding Baslik}"
+                TextColor="Black"
+                        Grid.Column="0"></Label>
+            <Label
+                Text="{Binding Icerik}"
+                TextColor="Black"
+                        Grid.Column="1"></Label>
+            <Label
+                Text="{Binding EklemeTarihi}"  
+                TextColor="Black"
+                        Grid.Column="2"></Label>
+        </StackLayout>
+
+    </Grid>
+</ViewCell>
+                    <TextCell Text="{Binding Baslik}" Detail="{Binding Icerik}">
+
+                                        <TextCell Text="{Binding Baslik}">
+                        <TextCell.Detail>
+                            <MultiBinding StringFormat="{}{0} {1}">
+                                <Binding Path="Icerik" />
+                                <Binding Path="EklemeTarihi" />
+                            </MultiBinding>
+                        </TextCell.Detail>
+                    </TextCell>
+
+<StackLayout Margin="5,20">
+    <Label
+            Text="{Binding Baslik}"
+            TextColor="Black" Grid.Row="0"
+                    Grid.Column="0"></Label>
+    <Label
+        Text="{Binding Icerik}"
+        TextColor="Black" Grid.Row="1"
+                Grid.Column="1"></Label>
+    <Label
+        Text="{Binding EklemeTarihi}"  
+        TextColor="Black" Grid.Row="2"
+                Grid.Column="2"></Label>
+</StackLayout>

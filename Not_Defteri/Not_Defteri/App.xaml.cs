@@ -10,12 +10,12 @@ namespace Not_Defteri
         public App()
         {
             InitializeComponent();
-            MainPage = new NavigationPage(new ContactsPage());
+            MainPage = new NavigationPage(new ContentsPage());
         }
         public App(string filePath)
         {
             InitializeComponent();
-            MainPage = new NavigationPage(new ContactsPage());
+            MainPage = new NavigationPage(new ContentsPage());
             FilePath = filePath;
         }
 

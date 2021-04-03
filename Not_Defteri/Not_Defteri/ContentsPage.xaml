@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Not_Defteri.ContactsPage">
+             x:Class="Not_Defteri.ContentsPage">
     <ContentPage.ToolbarItems>
         <ToolbarItem 
             Text="New"
@@ -9,12 +9,40 @@
             />
     </ContentPage.ToolbarItems>
     <ContentPage.Content>
-        <ListView x:Name="contentListiew">
-            <ListView.ItemTemplate>
-                <DataTemplate>
-                    <TextCell Text="{Binding Baslik}" Detail="{Binding EklemeTarihi}"/>
-                </DataTemplate>
-            </ListView.ItemTemplate>
-        </ListView>    
+        <StackLayout Orientation="Vertical"
+             VerticalOptions="Fill"
+             HorizontalOptions="StartAndExpand">
+            <ListView 
+                x:Name="contentListiew" 
+                VerticalOptions="FillAndExpand"
+                BackgroundColor="Transparent"
+                HasUnevenRows="True"
+               >
+                
+                <ListView.ItemTemplate >
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid Margin="13, 0" Padding="10" >
+                                <Frame BorderColor="DarkGray" CornerRadius="10">
+                                    <StackLayout>
+                                        <Label Text="{Binding Baslik}" 
+                                               Margin="0,3" 
+                                               FontSize="24"/>
+                                        <StackLayout>
+  
+                                            <Label Text="{Binding Icerik}" Margin="0" />
+                                            <Label Text="{Binding EklemeTarihi}" Margin="3" HorizontalOptions="Center" />
+                                        </StackLayout>
+                                    </StackLayout>
+
+                                </Frame>
+                            </Grid>
+                        </ViewCell>
+                        
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+                
+            </ListView>
+        </StackLayout>
     </ContentPage.Content>
 </ContentPage>
